@@ -1,0 +1,2592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/40/10.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/40/10.0">
+   <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+           schemaLocation="form_xsd_metaschema.xsd"/>
+   <element name="Doc_40" type="tns:Doc_40_Type" meta:metaType="DocMetaType">
+      <annotation>
+         <documentation>Bejelentés készpénzfizetésről</documentation>
+      </annotation>
+   </element>
+   <complexType name="Doc_40_Type">
+      <annotation>
+         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
+      </annotation>
+      <sequence>
+         <element name="Form_40"
+                  type="tns:Form_40_Type"
+                  minOccurs="1"
+                  maxOccurs="1"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>40 részbizonylat</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <simpleType name="Enum_40_0A0001E010A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="akna">
+            <annotation>
+               <documentation>akna=2</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="akna-alsó">
+            <annotation>
+               <documentation>akna-alsó=3</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="akna-felső">
+            <annotation>
+               <documentation>akna-felső=4</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="alagút">
+            <annotation>
+               <documentation>alagút=5</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="alsórakpart">
+            <annotation>
+               <documentation>alsórakpart=6</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="arborétum">
+            <annotation>
+               <documentation>arborétum=7</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="autóút">
+            <annotation>
+               <documentation>autóút=8</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="állat és növ.kert">
+            <annotation>
+               <documentation>állat és növ.kert=9</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="állomás">
+            <annotation>
+               <documentation>állomás=10</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="árnyék">
+            <annotation>
+               <documentation>árnyék=11</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="árok">
+            <annotation>
+               <documentation>árok=12</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="átjáró">
+            <annotation>
+               <documentation>átjáró=13</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="barakképület">
+            <annotation>
+               <documentation>barakképület=14</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="barlang">
+            <annotation>
+               <documentation>barlang=15</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="bánya">
+            <annotation>
+               <documentation>bánya=16</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="bányatelep">
+            <annotation>
+               <documentation>bányatelep=17</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="bástya">
+            <annotation>
+               <documentation>bástya=18</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="bástyája">
+            <annotation>
+               <documentation>bástyája=19</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="bejáró">
+            <annotation>
+               <documentation>bejáró=20</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="bekötőút">
+            <annotation>
+               <documentation>bekötőút=21</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="csárda">
+            <annotation>
+               <documentation>csárda=22</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="csónakházak">
+            <annotation>
+               <documentation>csónakházak=23</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="domb">
+            <annotation>
+               <documentation>domb=24</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="dűlő">
+            <annotation>
+               <documentation>dűlő=25</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="dűlősor">
+            <annotation>
+               <documentation>dűlősor=26</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="dűlőterület">
+            <annotation>
+               <documentation>dűlőterület=27</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="dűlőút">
+            <annotation>
+               <documentation>dűlőút=28</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="egyetemváros">
+            <annotation>
+               <documentation>egyetemváros=29</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="egyéb">
+            <annotation>
+               <documentation>egyéb=30</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="elágazás">
+            <annotation>
+               <documentation>elágazás=31</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="emlékút">
+            <annotation>
+               <documentation>emlékút=32</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="erdészház">
+            <annotation>
+               <documentation>erdészház=33</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="erdészlak">
+            <annotation>
+               <documentation>erdészlak=34</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="erdő">
+            <annotation>
+               <documentation>erdő=35</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="erdősor">
+            <annotation>
+               <documentation>erdősor=36</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="fasor">
+            <annotation>
+               <documentation>fasor=37</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="fasora">
+            <annotation>
+               <documentation>fasora=38</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="felső">
+            <annotation>
+               <documentation>felső=39</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="forduló">
+            <annotation>
+               <documentation>forduló=40</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="föld">
+            <annotation>
+               <documentation>föld=41</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="főmérnökség">
+            <annotation>
+               <documentation>főmérnökség=42</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="főtér">
+            <annotation>
+               <documentation>főtér=43</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="főút">
+            <annotation>
+               <documentation>főút=44</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="gát">
+            <annotation>
+               <documentation>gát=45</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="gátőrház">
+            <annotation>
+               <documentation>gátőrház=46</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="gátsor">
+            <annotation>
+               <documentation>gátsor=47</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="gyár">
+            <annotation>
+               <documentation>gyár=48</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="gyártelep">
+            <annotation>
+               <documentation>gyártelep=49</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="gyárváros">
+            <annotation>
+               <documentation>gyárváros=50</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="gyümölcsös">
+            <annotation>
+               <documentation>gyümölcsös=51</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="határsor">
+            <annotation>
+               <documentation>határsor=52</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="határút">
+            <annotation>
+               <documentation>határút=53</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ház">
+            <annotation>
+               <documentation>ház=54</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="hegy">
+            <annotation>
+               <documentation>hegy=55</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="hegyhát">
+            <annotation>
+               <documentation>hegyhát=56</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="hegyhát dűlő">
+            <annotation>
+               <documentation>hegyhát dűlő=57</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="hegyhát köz">
+            <annotation>
+               <documentation>hegyhát köz=58</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="hídfő">
+            <annotation>
+               <documentation>hídfő=59</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="hrsz.">
+            <annotation>
+               <documentation>hrsz.=61</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="iskola">
+            <annotation>
+               <documentation>iskola=60</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="játszótér">
+            <annotation>
+               <documentation>játszótér=62</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kapu">
+            <annotation>
+               <documentation>kapu=63</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kastély">
+            <annotation>
+               <documentation>kastély=64</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kert">
+            <annotation>
+               <documentation>kert=65</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kertsor">
+            <annotation>
+               <documentation>kertsor=66</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kilátó">
+            <annotation>
+               <documentation>kilátó=67</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kioszk">
+            <annotation>
+               <documentation>kioszk=68</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kocsiszín">
+            <annotation>
+               <documentation>kocsiszín=69</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kolónia">
+            <annotation>
+               <documentation>kolónia=70</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="korzó">
+            <annotation>
+               <documentation>korzó=71</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kör">
+            <annotation>
+               <documentation>kör=72</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="körönd">
+            <annotation>
+               <documentation>körönd=73</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="körtér">
+            <annotation>
+               <documentation>körtér=74</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="körút">
+            <annotation>
+               <documentation>körút=75</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="körvasútsor">
+            <annotation>
+               <documentation>körvasútsor=76</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="körzet">
+            <annotation>
+               <documentation>körzet=77</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="köz">
+            <annotation>
+               <documentation>köz=78</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kultúrpark">
+            <annotation>
+               <documentation>kultúrpark=79</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kunyhó">
+            <annotation>
+               <documentation>kunyhó=80</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kút">
+            <annotation>
+               <documentation>kút=81</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kültelek">
+            <annotation>
+               <documentation>kültelek=82</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="lakóház">
+            <annotation>
+               <documentation>lakóház=83</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="lakónegyed">
+            <annotation>
+               <documentation>lakónegyed=84</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="lakópark">
+            <annotation>
+               <documentation>lakópark=173</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="lakótelep">
+            <annotation>
+               <documentation>lakótelep=85</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="lejáró">
+            <annotation>
+               <documentation>lejáró=86</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="lejtő">
+            <annotation>
+               <documentation>lejtő=87</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="lépcső">
+            <annotation>
+               <documentation>lépcső=88</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="liget">
+            <annotation>
+               <documentation>liget=89</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="major">
+            <annotation>
+               <documentation>major=90</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="malom">
+            <annotation>
+               <documentation>malom=91</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="menedékház">
+            <annotation>
+               <documentation>menedékház=92</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="mélyút">
+            <annotation>
+               <documentation>mélyút=93</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="munkásszálló">
+            <annotation>
+               <documentation>munkásszálló=94</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="műút">
+            <annotation>
+               <documentation>műút=95</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="oldal">
+            <annotation>
+               <documentation>oldal=96</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="orom">
+            <annotation>
+               <documentation>orom=97</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="őrház">
+            <annotation>
+               <documentation>őrház=98</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="őrházak">
+            <annotation>
+               <documentation>őrházak=99</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="őrházlak">
+            <annotation>
+               <documentation>őrházlak=100</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="park">
+            <annotation>
+               <documentation>park=101</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="parkja">
+            <annotation>
+               <documentation>parkja=102</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="parkoló">
+            <annotation>
+               <documentation>parkoló=173</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="part">
+            <annotation>
+               <documentation>part=103</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="pavilon">
+            <annotation>
+               <documentation>pavilon=174</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="pálya">
+            <annotation>
+               <documentation>pálya=104</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="pályaudvar">
+            <annotation>
+               <documentation>pályaudvar=105</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="piac">
+            <annotation>
+               <documentation>piac=106</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="pihenő">
+            <annotation>
+               <documentation>pihenő=107</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="pince">
+            <annotation>
+               <documentation>pince=108</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="pincesor">
+            <annotation>
+               <documentation>pincesor=109</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="postafiók">
+            <annotation>
+               <documentation>postafiók=1</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="puszta">
+            <annotation>
+               <documentation>puszta=110</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="rakpart">
+            <annotation>
+               <documentation>rakpart=111</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="repülőtér">
+            <annotation>
+               <documentation>repülőtér=112</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="rész">
+            <annotation>
+               <documentation>rész=113</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="rét">
+            <annotation>
+               <documentation>rét=114</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sarok">
+            <annotation>
+               <documentation>sarok=115</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sánc">
+            <annotation>
+               <documentation>sánc=116</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sávház">
+            <annotation>
+               <documentation>sávház=117</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sétány">
+            <annotation>
+               <documentation>sétány=118</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sor">
+            <annotation>
+               <documentation>sor=119</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sora">
+            <annotation>
+               <documentation>sora=120</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sportpálya">
+            <annotation>
+               <documentation>sportpálya=121</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sporttelep">
+            <annotation>
+               <documentation>sporttelep=122</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="stadion">
+            <annotation>
+               <documentation>stadion=123</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="strandfürdő">
+            <annotation>
+               <documentation>strandfürdő=124</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sugárút">
+            <annotation>
+               <documentation>sugárút=125</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="szállás">
+            <annotation>
+               <documentation>szállás=126</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="szállások">
+            <annotation>
+               <documentation>szállások=127</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="szer">
+            <annotation>
+               <documentation>szer=128</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="szél">
+            <annotation>
+               <documentation>szél=129</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sziget">
+            <annotation>
+               <documentation>sziget=130</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="szivattyútelep">
+            <annotation>
+               <documentation>szivattyútelep=131</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="szőlő">
+            <annotation>
+               <documentation>szőlő=132</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="szőlőhegy">
+            <annotation>
+               <documentation>szőlőhegy=133</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="szőlők">
+            <annotation>
+               <documentation>szőlők=134</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tag">
+            <annotation>
+               <documentation>tag=135</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tanya">
+            <annotation>
+               <documentation>tanya=136</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tanyák">
+            <annotation>
+               <documentation>tanyák=137</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="telep">
+            <annotation>
+               <documentation>telep=138</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="temető">
+            <annotation>
+               <documentation>temető=139</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tere">
+            <annotation>
+               <documentation>tere=140</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tető">
+            <annotation>
+               <documentation>tető=141</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="téli kikötő">
+            <annotation>
+               <documentation>téli kikötő=142</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tér">
+            <annotation>
+               <documentation>tér=143</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tömb">
+            <annotation>
+               <documentation>tömb=144</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="turistaház">
+            <annotation>
+               <documentation>turistaház=145</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="udvar">
+            <annotation>
+               <documentation>udvar=146</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="utak">
+            <annotation>
+               <documentation>utak=147</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="utca">
+            <annotation>
+               <documentation>utca=148</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="utcája">
+            <annotation>
+               <documentation>utcája=149</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="út">
+            <annotation>
+               <documentation>út=150</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="útja">
+            <annotation>
+               <documentation>útja=151</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="útőrház">
+            <annotation>
+               <documentation>útőrház=152</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="üdülő">
+            <annotation>
+               <documentation>üdülő=153</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="üdülő-part">
+            <annotation>
+               <documentation>üdülő-part=154</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="üdülő-sor">
+            <annotation>
+               <documentation>üdülő-sor=155</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="üdülő-telep">
+            <annotation>
+               <documentation>üdülő-telep=156</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="vadaskert">
+            <annotation>
+               <documentation>vadaskert=157</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="vadászház">
+            <annotation>
+               <documentation>vadászház=158</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="vasútállomás">
+            <annotation>
+               <documentation>vasútállomás=159</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="vasúti megálló">
+            <annotation>
+               <documentation>vasúti megálló=160</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="vasúti őrház">
+            <annotation>
+               <documentation>vasúti őrház=161</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="vasútsor">
+            <annotation>
+               <documentation>vasútsor=162</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="vágóhíd">
+            <annotation>
+               <documentation>vágóhíd=163</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="vár">
+            <annotation>
+               <documentation>vár=164</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="várköz">
+            <annotation>
+               <documentation>várköz=165</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="város">
+            <annotation>
+               <documentation>város=166</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="vezetőút">
+            <annotation>
+               <documentation>vezetőút=167</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="villasor">
+            <annotation>
+               <documentation>villasor=168</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="vízmű">
+            <annotation>
+               <documentation>vízmű=169</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="völgy">
+            <annotation>
+               <documentation>völgy=170</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="zsilip">
+            <annotation>
+               <documentation>zsilip=171</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="zug">
+            <annotation>
+               <documentation>zug=172</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_40_0A0001E018A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="H">
+            <annotation>
+               <documentation>H=Helyesbítés</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_40_0A0001E006A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Afganisztán">
+            <annotation>
+               <documentation>Afganisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Albánia">
+            <annotation>
+               <documentation>Albánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Algéria">
+            <annotation>
+               <documentation>Algéria</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Amerikai Egyesült Államok">
+            <annotation>
+               <documentation>Amerikai Egyesült Államok</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Amerikai Samoa">
+            <annotation>
+               <documentation>Amerikai Samoa</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Andorra">
+            <annotation>
+               <documentation>Andorra</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Angola">
+            <annotation>
+               <documentation>Angola</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Anguilla">
+            <annotation>
+               <documentation>Anguilla</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Antarktisz">
+            <annotation>
+               <documentation>Antarktisz</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Antigua és Barbuda">
+            <annotation>
+               <documentation>Antigua és Barbuda</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Argentína">
+            <annotation>
+               <documentation>Argentína</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Aruba">
+            <annotation>
+               <documentation>Aruba</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Ausztrália">
+            <annotation>
+               <documentation>Ausztrália</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Ausztria">
+            <annotation>
+               <documentation>Ausztria</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Azerbajdzsán">
+            <annotation>
+               <documentation>Azerbajdzsán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Bahamák">
+            <annotation>
+               <documentation>Bahamák</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Bahrein">
+            <annotation>
+               <documentation>Bahrein</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Banglades">
+            <annotation>
+               <documentation>Banglades</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Barbados">
+            <annotation>
+               <documentation>Barbados</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Belgium">
+            <annotation>
+               <documentation>Belgium</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Belize">
+            <annotation>
+               <documentation>Belize</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Belorusszia">
+            <annotation>
+               <documentation>Belorusszia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Benin">
+            <annotation>
+               <documentation>Benin</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Bermuda">
+            <annotation>
+               <documentation>Bermuda</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Bhután">
+            <annotation>
+               <documentation>Bhután</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Bolívia">
+            <annotation>
+               <documentation>Bolívia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Bosznia-Hercegovina">
+            <annotation>
+               <documentation>Bosznia-Hercegovina</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Botswana">
+            <annotation>
+               <documentation>Botswana</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Bouvet-sziget">
+            <annotation>
+               <documentation>Bouvet-sziget</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Brazília">
+            <annotation>
+               <documentation>Brazília</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Brit Indiai-óceáni Terület">
+            <annotation>
+               <documentation>Brit Indiai-óceáni Terület</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Brunei">
+            <annotation>
+               <documentation>Brunei</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Bulgária">
+            <annotation>
+               <documentation>Bulgária</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Burkina Faso">
+            <annotation>
+               <documentation>Burkina Faso</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Burundi">
+            <annotation>
+               <documentation>Burundi</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Chile">
+            <annotation>
+               <documentation>Chile</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Ciprus">
+            <annotation>
+               <documentation>Ciprus</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Cocos-szigetek">
+            <annotation>
+               <documentation>Cocos-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Comoros">
+            <annotation>
+               <documentation>Comoros</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Cook-szigetek">
+            <annotation>
+               <documentation>Cook-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Costa Rica">
+            <annotation>
+               <documentation>Costa Rica</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Csád">
+            <annotation>
+               <documentation>Csád</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Cseh Köztársaság">
+            <annotation>
+               <documentation>Cseh Köztársaság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Dánia">
+            <annotation>
+               <documentation>Dánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Dél-afrikai Köztársaság">
+            <annotation>
+               <documentation>Dél-afrikai Köztársaság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Dél-Georgia és Dél-Sandwich-szigetek">
+            <annotation>
+               <documentation>Dél-Georgia és Dél-Sandwich-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Dominika">
+            <annotation>
+               <documentation>Dominika</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Dominikai Köztársaság">
+            <annotation>
+               <documentation>Dominikai Köztársaság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Dzsibuti">
+            <annotation>
+               <documentation>Dzsibuti</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Ecuador">
+            <annotation>
+               <documentation>Ecuador</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Egyenlítői Guinea">
+            <annotation>
+               <documentation>Egyenlítői Guinea</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Egyesült államok külső szigetei">
+            <annotation>
+               <documentation>Egyesült államok külső szigetei</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Egyesült Arab Emírségek">
+            <annotation>
+               <documentation>Egyesült Arab Emírségek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Egyesült Királyság">
+            <annotation>
+               <documentation>Egyesült Királyság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Egyiptom">
+            <annotation>
+               <documentation>Egyiptom</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Elefántcsontpart">
+            <annotation>
+               <documentation>Elefántcsontpart</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Eritrea">
+            <annotation>
+               <documentation>Eritrea</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Északi-Mariana-szigetek">
+            <annotation>
+               <documentation>Északi-Mariana-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Észtország">
+            <annotation>
+               <documentation>Észtország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Etiópia">
+            <annotation>
+               <documentation>Etiópia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Falkland-szigetek">
+            <annotation>
+               <documentation>Falkland-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Faroe-szigetek">
+            <annotation>
+               <documentation>Faroe-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Fidzsi-szigetek">
+            <annotation>
+               <documentation>Fidzsi-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Finnország">
+            <annotation>
+               <documentation>Finnország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Francia déli területek">
+            <annotation>
+               <documentation>Francia déli területek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Francia Guyana">
+            <annotation>
+               <documentation>Francia Guyana</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Francia Polinézia">
+            <annotation>
+               <documentation>Francia Polinézia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Franciaország">
+            <annotation>
+               <documentation>Franciaország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Fülöp-szigetek">
+            <annotation>
+               <documentation>Fülöp-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Gabon">
+            <annotation>
+               <documentation>Gabon</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Gambia">
+            <annotation>
+               <documentation>Gambia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Ghána">
+            <annotation>
+               <documentation>Ghána</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Gibraltár">
+            <annotation>
+               <documentation>Gibraltár</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Görögország">
+            <annotation>
+               <documentation>Görögország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Grenada">
+            <annotation>
+               <documentation>Grenada</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Grönland">
+            <annotation>
+               <documentation>Grönland</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Grúzia">
+            <annotation>
+               <documentation>Grúzia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Guadeloupe">
+            <annotation>
+               <documentation>Guadeloupe</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Guam-szigetek">
+            <annotation>
+               <documentation>Guam-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Guatemala">
+            <annotation>
+               <documentation>Guatemala</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Guinea">
+            <annotation>
+               <documentation>Guinea</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Guinea-Bissau">
+            <annotation>
+               <documentation>Guinea-Bissau</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Guyana">
+            <annotation>
+               <documentation>Guyana</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Haiti">
+            <annotation>
+               <documentation>Haiti</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Heard- és McDonald-szigetek">
+            <annotation>
+               <documentation>Heard- és McDonald-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Holland Antillák">
+            <annotation>
+               <documentation>Holland Antillák</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Hollandia">
+            <annotation>
+               <documentation>Hollandia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Honduras">
+            <annotation>
+               <documentation>Honduras</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Hongkong">
+            <annotation>
+               <documentation>Hongkong</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Horvátország">
+            <annotation>
+               <documentation>Horvátország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="India">
+            <annotation>
+               <documentation>India</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Indonézia">
+            <annotation>
+               <documentation>Indonézia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Irak">
+            <annotation>
+               <documentation>Irak</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Irán">
+            <annotation>
+               <documentation>Irán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Írország">
+            <annotation>
+               <documentation>Írország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Ismeretlen">
+            <annotation>
+               <documentation>Ismeretlen</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Izland">
+            <annotation>
+               <documentation>Izland</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Izrael">
+            <annotation>
+               <documentation>Izrael</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Jamaica">
+            <annotation>
+               <documentation>Jamaica</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Japán">
+            <annotation>
+               <documentation>Japán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Jemen">
+            <annotation>
+               <documentation>Jemen</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Jersey">
+            <annotation>
+               <documentation>Jersey</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Jordánia">
+            <annotation>
+               <documentation>Jordánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kajmán-szigetek">
+            <annotation>
+               <documentation>Kajmán-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kambodzsa">
+            <annotation>
+               <documentation>Kambodzsa</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kamerun">
+            <annotation>
+               <documentation>Kamerun</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kanada">
+            <annotation>
+               <documentation>Kanada</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Karácsony-szigetek">
+            <annotation>
+               <documentation>Karácsony-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Katar">
+            <annotation>
+               <documentation>Katar</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kazahsztán">
+            <annotation>
+               <documentation>Kazahsztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kenya">
+            <annotation>
+               <documentation>Kenya</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kína">
+            <annotation>
+               <documentation>Kína</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kirgizisztán">
+            <annotation>
+               <documentation>Kirgizisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kiribati">
+            <annotation>
+               <documentation>Kiribati</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kolumbia">
+            <annotation>
+               <documentation>Kolumbia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kongó">
+            <annotation>
+               <documentation>Kongó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kongói Demokratikus Köztársaság">
+            <annotation>
+               <documentation>Kongói Demokratikus Köztársaság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Koreai Köztársaság">
+            <annotation>
+               <documentation>Koreai Köztársaság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Koreai NDK">
+            <annotation>
+               <documentation>Koreai NDK</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Közép-Afrikai Köztársaság">
+            <annotation>
+               <documentation>Közép-Afrikai Köztársaság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kuba">
+            <annotation>
+               <documentation>Kuba</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kuwait">
+            <annotation>
+               <documentation>Kuwait</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Laosz">
+            <annotation>
+               <documentation>Laosz</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Lengyelország">
+            <annotation>
+               <documentation>Lengyelország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Lesotho">
+            <annotation>
+               <documentation>Lesotho</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Lettország">
+            <annotation>
+               <documentation>Lettország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Libanon">
+            <annotation>
+               <documentation>Libanon</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Libéria">
+            <annotation>
+               <documentation>Libéria</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Líbia">
+            <annotation>
+               <documentation>Líbia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Liechtenstein">
+            <annotation>
+               <documentation>Liechtenstein</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Litvánia">
+            <annotation>
+               <documentation>Litvánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Luxemburg">
+            <annotation>
+               <documentation>Luxemburg</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Macedónia">
+            <annotation>
+               <documentation>Macedónia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Madagaszkár">
+            <annotation>
+               <documentation>Madagaszkár</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Makaó">
+            <annotation>
+               <documentation>Makaó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Malajzia">
+            <annotation>
+               <documentation>Malajzia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Malawi">
+            <annotation>
+               <documentation>Malawi</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Maldív-szigetek">
+            <annotation>
+               <documentation>Maldív-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Mali">
+            <annotation>
+               <documentation>Mali</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Málta">
+            <annotation>
+               <documentation>Málta</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Marokkó">
+            <annotation>
+               <documentation>Marokkó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Marshall-szigetek">
+            <annotation>
+               <documentation>Marshall-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Martinique">
+            <annotation>
+               <documentation>Martinique</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Mauritánia">
+            <annotation>
+               <documentation>Mauritánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Mauritius">
+            <annotation>
+               <documentation>Mauritius</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Mayotte">
+            <annotation>
+               <documentation>Mayotte</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Mexikó">
+            <annotation>
+               <documentation>Mexikó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Mikronézia">
+            <annotation>
+               <documentation>Mikronézia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Moldova">
+            <annotation>
+               <documentation>Moldova</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Monaco">
+            <annotation>
+               <documentation>Monaco</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Mongólia">
+            <annotation>
+               <documentation>Mongólia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Montenegró">
+            <annotation>
+               <documentation>Montenegró</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Montserrat">
+            <annotation>
+               <documentation>Montserrat</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Mozambik">
+            <annotation>
+               <documentation>Mozambik</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Myanmar (Burma)">
+            <annotation>
+               <documentation>Myanmar (Burma)</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Namíbia">
+            <annotation>
+               <documentation>Namíbia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Nauru">
+            <annotation>
+               <documentation>Nauru</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Németország">
+            <annotation>
+               <documentation>Németország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Nepál">
+            <annotation>
+               <documentation>Nepál</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Nicaragua">
+            <annotation>
+               <documentation>Nicaragua</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Niger">
+            <annotation>
+               <documentation>Niger</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Nigéria">
+            <annotation>
+               <documentation>Nigéria</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Niue">
+            <annotation>
+               <documentation>Niue</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Norfolk szigetek">
+            <annotation>
+               <documentation>Norfolk szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Norvégia">
+            <annotation>
+               <documentation>Norvégia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Nyugat-Szahara">
+            <annotation>
+               <documentation>Nyugat-Szahara</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Nyugat-Szamoa">
+            <annotation>
+               <documentation>Nyugat-Szamoa</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Olaszország">
+            <annotation>
+               <documentation>Olaszország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Omán">
+            <annotation>
+               <documentation>Omán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Oroszország">
+            <annotation>
+               <documentation>Oroszország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Örményország">
+            <annotation>
+               <documentation>Örményország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Pakisztán">
+            <annotation>
+               <documentation>Pakisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Palau">
+            <annotation>
+               <documentation>Palau</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Palesztína">
+            <annotation>
+               <documentation>Palesztína</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Panama">
+            <annotation>
+               <documentation>Panama</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Papua Új-Guinea">
+            <annotation>
+               <documentation>Papua Új-Guinea</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Paraguay">
+            <annotation>
+               <documentation>Paraguay</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Peru">
+            <annotation>
+               <documentation>Peru</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Pitcairn-szigetek">
+            <annotation>
+               <documentation>Pitcairn-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Portugália">
+            <annotation>
+               <documentation>Portugália</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Puerto Rico">
+            <annotation>
+               <documentation>Puerto Rico</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Reunion">
+            <annotation>
+               <documentation>Reunion</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Románia">
+            <annotation>
+               <documentation>Románia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Ruanda">
+            <annotation>
+               <documentation>Ruanda</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Salamon-szigetek">
+            <annotation>
+               <documentation>Salamon-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Salvador">
+            <annotation>
+               <documentation>Salvador</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="San Marino">
+            <annotation>
+               <documentation>San Marino</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Sao Tome és Principe">
+            <annotation>
+               <documentation>Sao Tome és Principe</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Seychelle-szigetek">
+            <annotation>
+               <documentation>Seychelle-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Sierra Leone">
+            <annotation>
+               <documentation>Sierra Leone</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Spanyolország">
+            <annotation>
+               <documentation>Spanyolország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Srí Lanka">
+            <annotation>
+               <documentation>Srí Lanka</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Suriname">
+            <annotation>
+               <documentation>Suriname</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Svájc">
+            <annotation>
+               <documentation>Svájc</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Svalbard- és Jan Mayen-szigetek">
+            <annotation>
+               <documentation>Svalbard- és Jan Mayen-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Svédország">
+            <annotation>
+               <documentation>Svédország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szaúd-Arábia">
+            <annotation>
+               <documentation>Szaúd-Arábia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szenegál">
+            <annotation>
+               <documentation>Szenegál</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szent Ilona">
+            <annotation>
+               <documentation>Szent Ilona</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szent Kitts és Nevis">
+            <annotation>
+               <documentation>Szent Kitts és Nevis</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szent Lucia">
+            <annotation>
+               <documentation>Szent Lucia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szent Pierre és Miquelon">
+            <annotation>
+               <documentation>Szent Pierre és Miquelon</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szent Vincent és Grenadine-szigetek">
+            <annotation>
+               <documentation>Szent Vincent és Grenadine-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szerbia">
+            <annotation>
+               <documentation>Szerbia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szingapúr">
+            <annotation>
+               <documentation>Szingapúr</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szíria">
+            <annotation>
+               <documentation>Szíria</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szlovákia">
+            <annotation>
+               <documentation>Szlovákia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szlovénia">
+            <annotation>
+               <documentation>Szlovénia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szomália">
+            <annotation>
+               <documentation>Szomália</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szudán">
+            <annotation>
+               <documentation>Szudán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Szváziföld">
+            <annotation>
+               <documentation>Szváziföld</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Tadzsikisztán">
+            <annotation>
+               <documentation>Tadzsikisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Tajvan">
+            <annotation>
+               <documentation>Tajvan</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Tanzánia">
+            <annotation>
+               <documentation>Tanzánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Thaiföld">
+            <annotation>
+               <documentation>Thaiföld</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Timor Leste">
+            <annotation>
+               <documentation>Timor Leste</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Togo">
+            <annotation>
+               <documentation>Togo</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Tokelau">
+            <annotation>
+               <documentation>Tokelau</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Tonga">
+            <annotation>
+               <documentation>Tonga</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Törökország">
+            <annotation>
+               <documentation>Törökország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Trinidad és Tobago">
+            <annotation>
+               <documentation>Trinidad és Tobago</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Tunézia">
+            <annotation>
+               <documentation>Tunézia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Turks- és Caicos-szigetek">
+            <annotation>
+               <documentation>Turks- és Caicos-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Tuvalu">
+            <annotation>
+               <documentation>Tuvalu</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Türkmenisztán">
+            <annotation>
+               <documentation>Türkmenisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Uganda">
+            <annotation>
+               <documentation>Uganda</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Új-Kaledónia">
+            <annotation>
+               <documentation>Új-Kaledónia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Új-Zéland">
+            <annotation>
+               <documentation>Új-Zéland</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Ukrajna">
+            <annotation>
+               <documentation>Ukrajna</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Uruguay">
+            <annotation>
+               <documentation>Uruguay</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Üzbegisztán">
+            <annotation>
+               <documentation>Üzbegisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Vanuatu">
+            <annotation>
+               <documentation>Vanuatu</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Vatikán állam">
+            <annotation>
+               <documentation>Vatikán állam</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Venezuela">
+            <annotation>
+               <documentation>Venezuela</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Vietnám">
+            <annotation>
+               <documentation>Vietnám</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Virgin-szigetek (Brit)">
+            <annotation>
+               <documentation>Virgin-szigetek (Brit)</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Virgin-szigetek (USA)">
+            <annotation>
+               <documentation>Virgin-szigetek (USA)</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Wallis- és Futuna-szigetek">
+            <annotation>
+               <documentation>Wallis- és Futuna-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Zambia">
+            <annotation>
+               <documentation>Zambia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Zimbabwe">
+            <annotation>
+               <documentation>Zimbabwe</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Zöld-foki-szigetek">
+            <annotation>
+               <documentation>Zöld-foki-szigetek</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_40_0BXXXXC0001CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="K">
+            <annotation>
+               <documentation>K=0</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="N">
+            <annotation>
+               <documentation>N=1</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_40_0BXXXXC001A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="16.67">
+            <annotation>
+               <documentation>16.67</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="20">
+            <annotation>
+               <documentation>20</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="21.26">
+            <annotation>
+               <documentation>21.26</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_40_0BXXXXC002A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="13.04">
+            <annotation>
+               <documentation>13.04</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="15.25">
+            <annotation>
+               <documentation>15.25</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_40_0BXXXXC003A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="4.76">
+            <annotation>
+               <documentation>4.76</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <complexType name="Form_40_Type">
+      <annotation>
+         <documentation>A teljes nyomtatvány 40 részbiztonylatának szerkezetét leíró típus.</documentation>
+      </annotation>
+      <sequence>
+         <element name="Block_120027"
+                  type="tns:Block_40_120027_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>40 - BEJELENTÉS készpénzfizetésről</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120001"
+                  type="tns:Block_40_120001_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>BEJELENTÉS készpénzfizetésről</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Block_40_120027_Type">
+      <annotation>
+         <documentation>40 - BEJELENTÉS készpénzfizetésről</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120080"
+                  type="tns:FieldGroup_40_120080_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Azonosító adatok</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_40_120001_Type">
+      <annotation>
+         <documentation>BEJELENTÉS készpénzfizetésről</documentation>
+      </annotation>
+      <all>
+         <element name="Chain_120002"
+                  type="tns:Chain_40_120002_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>BEJELENTÉS készpénzfizetésről</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Chain_40_120002_Type">
+      <annotation>
+         <documentation>BEJELENTÉS készpénzfizetésről</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="999">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120008"
+                           type="tns:FieldGroup_40_120008_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>BEJELENTÉS készpénzfizetésről</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="FieldGroup_40_120080_Type">
+      <annotation>
+         <documentation>Azonosító adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001E001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bejelentő adózó adatai ¦ Adóazonosító jel (Adóazon_jel)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bejelentő adózó adatai ¦ Adószám (Adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Név (Adózó_neve)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E017A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Ügyintéző adatai ¦ Név (Üint_név)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E016A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Ügyintéző adatai ¦ Telefonszám (Üint_telsz)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bejelentés adatai ¦ Hibásnak minősített bejelentés vonalkódja (Vonalkód)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E018A"
+                  minOccurs="0"
+                  type="tns:Enum_40_0A0001E018A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bejelentés jellege (bev_jelleg)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E019A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Készpénzfizetés időpontja (Fiz_dátum)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E020A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ Készpénzfizetések száma (főlap_02lapszám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="3"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_40_120008_Type">
+      <annotation>
+         <documentation>BEJELENTÉS készpénzfizetésről</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0CXXXXD50054A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A készpénzt befogadó (eladó) adatai ¦ Név ([02]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXD50055A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Cím ([02]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXD50051A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adóazonosító jel ([02]A3_adóazonosító)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXD50052A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószám ([02]B3_adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXE50034A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Készpénzfizetés adószámmal rendelkező jogi személyek, jogi személyiség nélküli társaságok, egyéb szervezetek és egyéni vállalkozók részére ¦ Készpénzben kifizetett (bruttó) összeg összesen ([02]A4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXE50042A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kifizetett összeg áfa tartalom szerinti megoszlása ¦ Áfa tartalom: 21,26% (adókulcs 27%) ([02]A5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXE50045A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Áfa tartalom: 15,25% (adókulcs 18%) ([02]A8)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXE50047A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Áfa tartalom: 4,76% (adókulcs 5%) ([02]A10)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXE50048A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ ÁFA adómentes, illetve ÁFA tv. hatályon kívüli, kifizetett összeg ([02]A11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXF50056A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Készpénzfizetés adóazonosító jellel rendelkező magánszemélyek részére ¦ Vásárolt termék, szolgáltatás rövid megnevezése ([02]A12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="160"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXF50049A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Készpénzben kifizetett összeg ([02]A13)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXG50058A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Készpénzfizetés adószámmal, adóazonosító jellel nem rendelkező személyek (elsődlegesen külföldi cégek, magánszemélyek) részére ¦ Vásárolt termék, szolgáltatás rövid megnevezése ([02]A14)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="160"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXG50050A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Készpénzben kifizetett összeg ([02]A15)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+</schema>
